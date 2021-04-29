@@ -68,6 +68,10 @@ img {
   text-decoration: none;
 }
 
+.list-item .link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .list-item .link:hover,
 .list-item .link:focus {
   color: var(--accent-color);
@@ -151,7 +155,9 @@ img {
   color: var(--heading-text-color);
 
   display: inline-flex;
+  align-items: center;
 }
+
 .header-nav .list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -172,7 +178,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
   position: absolute;
-  bottom: -28px;
+  bottom: -32px;
 }
 .contacts-header .link {
   color: var(--main-text-color);
@@ -203,6 +209,11 @@ img {
   margin-right: 10px;
   fill: var(--main-text-color);
 }
+.link .icon-mail,
+.link .icon-phone {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link:hover .icon-mail,
 .link:focus .icon-mail {
   fill: var(--accent-color);
@@ -211,10 +222,12 @@ img {
   margin-right: 10px;
   fill: var(--main-text-color);
 }
+
 .link:hover .icon-phone,
 .link:focus .icon-phone {
   fill: var(--accent-color);
 }
+
 /* Студия - Герой */
 
 .hero-section {
@@ -265,6 +278,14 @@ img {
   border-color: transparent;
   min-width: 200px;
   min-height: 50px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
 }
 
 /* Студия - Преимущества */
@@ -413,19 +434,23 @@ img {
   margin-bottom: 30px;
   align-items: center;
 }
-.socials-list-team .icon {
+.link.socials .icon {
   fill: var(--icons-fill-grey);
+  transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link:hover .icon,
-.link:focus .icon {
+
+.link.socials:hover .icon,
+.link.socials:focus .icon {
   fill: var(--primary-white-color);
 }
+
 .link.socials {
   display: inline-block;
   width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 50%;
+  transition: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.socials:hover,
 .link.socials:focus {
