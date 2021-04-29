@@ -69,7 +69,7 @@ img {
 }
 
 .list-item .link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-item .link:hover,
@@ -211,7 +211,7 @@ img {
 }
 .link .icon-mail,
 .link .icon-phone {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover .icon-mail,
@@ -444,7 +444,7 @@ img {
   fill: var(--primary-white-color);
 }
 
-.link.socials {
+.list-item .link.socials {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -452,8 +452,8 @@ img {
   border-radius: 50%;
   transition: background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link.socials:hover,
-.link.socials:focus {
+.list-item .link.socials:hover,
+.list-item .link.socials:focus {
   background-color: var(--accent-color);
 }
 /* Студия - Постоянные клиенты */
@@ -469,13 +469,15 @@ img {
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--icons-fill-grey);
+  transition: border-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.client:hover,
 .link.client:focus {
   border-color: var(--accent-color);
 }
-.icon-client {
+.link .icon-client {
   fill: var(--icons-fill-grey);
+  transition: fill 5000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover .icon-client,
