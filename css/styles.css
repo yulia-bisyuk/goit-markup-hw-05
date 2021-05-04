@@ -687,8 +687,7 @@ img {
   height: 44px;
   justify-content: space-between;
   margin-right: 70px;
-  margin-bottom: 100px;
-  /* align-items: center; */
+  align-items: center;
 }
 .link.socials.dark {
   background-color: rgba(255, 255, 255, 0.1);
